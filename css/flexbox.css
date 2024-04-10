@@ -42,6 +42,9 @@
     border-bottom: 1px solid var(--cinza-escuro);
     padding: 24px 0;
   }
+  .menu__lista:last-child{
+    border-bottom: none;
+  }
   
   .menu__lista li {
     display: flex;
@@ -53,13 +56,6 @@
     align-items: center;
     gap:  1rem;
   }
-  
-  .menu__lista:nth-child(2),
-  .menu__lista:nth-child(3),
-  .menu__lista:nth-child(4) {
-
-  }
-  
   
   
   /* SECAO SUPERIOR */
