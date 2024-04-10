@@ -329,10 +329,20 @@ iframe{
     /*ESTILOS SEÇÃO VÍDEOS */
 
     .videos__container {
-        padding-left: 90px;
+        padding-left: 110px;
         padding-right: 17px;
     }
 
+}
+
+
+
+
+@media(max-width: 1440px) {
+    .superior__secao__container {
+        padding: 0;
+        margin: 0 20px;
+    }
 }
 
 @media(min-width: 1440px) {

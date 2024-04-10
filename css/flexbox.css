@@ -49,6 +49,7 @@
   .menu__lista li {
     display: flex;
     align-items: center;
+    width: 100%;
   }
   
   .menu__itens {
@@ -56,7 +57,66 @@
     align-items: center;
     gap:  1rem;
   }
-  
+
+  @media screen and (max-width: 1440px) {
+    
+    .menu__container {
+      width: 5.0625rem;
+      top: 80px;
+      padding-left: 25px;
+      left: 0;
+    }
+
+    .menu__lista{
+      display: none;
+
+    }
+
+    .menu__lista:first-child{
+      display: flex;
+      width: max-content;
+      border: none;
+    }
+
+      
+    .menu__itens {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+
+  @media screen and (max-width: 834px) {
+
+    .menu__container {
+      padding: 0 20px;
+      width: 100%;
+      height: 70px;
+      top: 100%;
+      margin-top: -70px;
+      border-top: 1.5px solid var(--cinza-escuro);
+    }
+
+    .menu__lista:first-child{
+      flex-direction: row;
+      height: 70px;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+  .menu__lista li {
+    height: 100%;
+  }
+
+    .menu__itens{
+      gap: .3rem;
+      height: 100%;
+    }
+
+  }
   
   /* SECAO SUPERIOR */
   
